@@ -1,1 +1,224 @@
+.menu{
+    display: flex;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7c7c7c;
+ }
+ .navbar a:hover
+ {
+    color: black;
+    text-decoration-thickness: 4px;
+    text-decoration-color:hsl(26, 100%, 55%) ;
+ }
+.shopping img{
+    height: 40px;
+    
+    border-radius: 100%;
+}
+.shopping img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+.shopping i{
+    color: #7c7c7c;
+    padding-right: 20px;
+}
+.shopping i:hover{
+    color: black;
+    cursor: pointer;
+}
+.line{
+    border-top: 1px solid #cfcbcb ;
+    width: 100%;
+}
+.firstdiv{
+    display: flex;
+}
+
+.image1 img{
+    width: 20%;
+    display: block;
+    margin: auto;
+    border-radius: 7%;
+    cursor: pointer;
+}
+.text h6{
+    color:hsl(26, 100%, 55%) ;
+    padding-top: 30px;
+}
+.text h1{
+    font-size: 40px;
+    width: 70%;
+    font-weight: 700;
+}
+.text p{
+    color: hsl(219, 9%, 45%);
+    width: 80%;
+}
+.showimg{
+    width: 80%;
+    padding-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+.text h4{
+    font-weight: 700;
+}
+.text h4 span{
+    font-size: 15px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    display: inline-block;
+    margin: auto;
+    
+}
+.text .sp{
+    color: hsl(219, 9%, 45%);
+    text-decoration-line: line-through;
+}
+.center {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background: hsl(223, 64%, 98%);
+    display: flex;
+    justify-content: space-around;
+  }
+  .discount, .count {
+  position: relative;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.center .discount::after {
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  content: " ";
+  width: 20px;
+  height: 4px;
+  background: hsl(26, 100%, 55%);
+}
+
+.center .count::before {
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  content: " ";
+  width: 20px;
+  height: 4px;
+  background: hsl(26, 100%, 55%);
+}
+
+.center .count::after {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 13px;
+  content: " ";
+  width: 4px;
+  height: 20px;
+  background: hsl(26, 100%, 55%);
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 600;
+}
+.text button{
+    background-color:hsl(26, 100%, 55%);
+    box-shadow: 0px 5px 8px 0px rgba(255, 110, 0,0.3);
+    padding: 0px 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 15px;
+}
+.btn{
+    display: flex;
+}
+.menu .fa-bars{
+    font-size: 30px;
+    padding-top: 16px;
+    padding-right: 10px;
+    display: none;
+}
+.options{
+    border-style: solid;
+    display: none;
+}
+
+
+@media(max-width:550px){
+    .menu ul{
+        display: none;
+    }
+    .menu .fa-bars{
+        display: inline-block;
+        cursor: pointer;
+    }
+   
+    .options{
+        display: inline;
+        display: none;
+    }
+    .options .fa-times{
+        font-size: 26px;
+        margin-top: 10px; 
+        margin-left: 10px; 
+    }
+    
+    .options ul{
+        display:inline-block;
+        /* margin-right: 0px; */
+        padding-left: 30px;
+    }
+    .options ul li a{
+        padding-right: 30px;
+        font-weight: 700;
+        color: black;
+    }
+    .btn{
+        display: block;
+    }
+    .text button{
+        width: 100%;
+    }
+    .center{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        margin: auto;
+        margin-left: 15px;
+    }
+    button{
+        width: 100%;
+        height: 40px;  
+       
+        margin-top: 14px;
+    }
+}
 
